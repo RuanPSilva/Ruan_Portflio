@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trajetória — Ruan Pablo Fernandes</title>
+  <meta name="description" content="Linha do tempo de formação acadêmica e cursos de Ruan Pablo Fernandes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./src/img/iconR.png" type="./image/png">
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="index.html" class="nav-logo">ruan<span>.</span>dev</a>
+
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre mim</a></li>
+        <li><a href="trajetoria.html" class="active">Trajetória</a></li>
+        <li><a href="projt.html">Projetos</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="prompt-label">ruan@dev:~$ cat trajetoria.log</p>
+        <h1 class="section-title">Minha trajetória</h1>
+        <p class="section-lead">Formação acadêmica e cursos que fazem parte da minha caminhada em tecnologia.</p>
+      </div>
+    </section>
+
+    <!-- Linha do tempo de formação/cursos -->
+    <section>
+      <div class="container">
+        <p class="placeholder-note">
+          SUBSTITUIR: os itens abaixo são placeholders. Preencha com suas
+          instituições, cursos e períodos reais.
+        </p>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <span class="timeline-period">[ano de início] — atual</span>
+            <h3>Tecnólogo em Redes de Computadores</h3>
+            <p>[Nome da instituição de ensino]. Curso voltado à infraestrutura, protocolos e administração de redes.</p>
+          </li>
+
+          <li class="timeline-item">
+            <span class="timeline-period">[período]</span>
+            <h3>[Curso complementar ou certificação]</h3>
+            <p>[Instituição/plataforma]. [Breve descrição do que foi estudado.]</p>
+          </li>
+
+          <li class="timeline-item">
+            <span class="timeline-period">[período]</span>
+            <h3>[Curso ou marco de estudo em desenvolvimento]</h3>
+            <p>[Instituição/plataforma]. [Breve descrição do que foi estudado.]</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="ano"></span> Ruan Pablo Fernandes. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <a href="mailto:ruanfernandes.ti@outlook.com">E-mail</a>
+        <a href="https://www.linkedin.com/in/ruan-fernandes-3a396a2a1?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/RuanPSilva/RuanPSilva/blob/main/README.md" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" aria-label="Voltar ao topo">↑</button>
+
+  <script src="./src/main.js"></script>
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

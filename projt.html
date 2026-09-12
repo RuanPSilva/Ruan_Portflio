@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projetos — Ruan Pablo Fernandes</title>
+  <meta name="description" content="Projetos práticos desenvolvidos por Ruan Pablo Fernandes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./src/img/iconR.png" type="./image/png">
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="index.html" class="nav-logo">ruan<span>.</span>dev</a>
+
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre mim</a></li>
+        <li><a href="trajetoria.html">Trajetória</a></li>
+        <li><a href="projt.html" class="active">Projetos</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="prompt-label">ruan@dev:~$ ls projetos/</p>
+        <h1 class="section-title">Meus projetos</h1>
+        <p class="section-lead">Projetos práticos usados para aplicar e evoluir minhas habilidades em desenvolvimento e redes.</p>
+      </div>
+    </section>
+
+    <!-- Grade de projetos -->
+    <section>
+      <div class="container">
+        <p class="placeholder-note">
+          SUBSTITUIR: os cards abaixo são placeholders. Troque nome, descrição,
+          tecnologias e links pelos seus projetos reais — não deixe links falsos.
+        </p>
+
+        <div class="projects-grid">
+          <article class="project-card ripple-el">
+            <div class="project-thumb" aria-hidden="true">preview do projeto</div>
+            <div class="project-body">
+              <h3>[Nome do projeto 1]</h3>
+              <p>[Descrição breve do que o projeto faz e qual problema resolve.]</p>
+              <div class="tag-list">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/RuanPSilva/RuanPSilva/blob/main/README.md" target="_blank" rel="noopener noreferrer">Código-fonte</a>
+                <a href="#" aria-disabled="true">Demonstração (adicionar link)</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card ripple-el">
+            <div class="project-thumb" aria-hidden="true">preview do projeto</div>
+            <div class="project-body">
+              <h3>[Nome do projeto 2]</h3>
+              <p>[Descrição breve do que o projeto faz e qual problema resolve.]</p>
+              <div class="tag-list">
+                <span class="tag">Redes</span>
+                <span class="tag">Packet Tracer</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/RuanPSilva/RuanPSilva/blob/main/README.md" target="_blank" rel="noopener noreferrer">Código-fonte</a>
+                <a href="#" aria-disabled="true">Demonstração (adicionar link)</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card ripple-el">
+            <div class="project-thumb" aria-hidden="true">preview do projeto</div>
+            <div class="project-body">
+              <h3>[Nome do projeto 3]</h3>
+              <p>[Descrição breve do que o projeto faz e qual problema resolve.]</p>
+              <div class="tag-list">
+                <span class="tag">Full Stack</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/RuanPSilva/RuanPSilva/blob/main/README.md" target="_blank" rel="noopener noreferrer">Código-fonte</a>
+                <a href="#" aria-disabled="true">Demonstração (adicionar link)</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="ano"></span> Ruan Pablo Fernandes. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <a href="mailto:ruanfernandes.ti@outlook.com">E-mail</a>
+        <a href="https://www.linkedin.com/in/ruan-fernandes-3a396a2a1?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/RuanPSilva/RuanPSilva/blob/main/README.md" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" aria-label="Voltar ao topo">↑</button>
+
+  <script src="./src/main.js"></script>
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

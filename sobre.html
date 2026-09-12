@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre mim — Ruan Pablo Fernandes</title>
+  <meta name="description" content="Conheça a trajetória e os objetivos profissionais de Ruan Pablo Fernandes, desenvolvedor full stack e tecnólogo em Redes de Computadores." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./src/img/iconR.png" type="./image/png">
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="index.html" class="nav-logo">ruan<span>.</span>dev</a>
+
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html" class="active">Sobre mim</a></li>
+        <li><a href="trajetoria.html">Trajetória</a></li>
+        <li><a href="projt.html">Projetos</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="prompt-label">ruan@dev:~$ cat sobre.md</p>
+        <h1 class="section-title">Sobre mim</h1>
+        <p class="section-lead">Um pouco de quem eu sou e o que busco na área de tecnologia.</p>
+      </div>
+    </section>
+
+    <!-- Conteúdo textual sobre a trajetória pessoal -->
+    <section>
+      <div class="container about-grid">
+        <div class="about-text">
+          <p>
+            Meu nome é Ruan Pablo Fernandes. Atualmente estou estágiando como Suporte de T.I na 
+            escola estadual Fernão dias Paes, faço a manutenção de equipamentos, participei da 
+            infraestrutura de redes também coloco as imagens nos softwares necessários. 
+            Busquei atuar nessa área para possuir os três conhecimentos básicos que são: 
+            Hardware, Software e Infraestrutura de redes a onde consigo abranger meu conhecimento.
+          </p>
+          <p class="placeholder-note">
+            Busco uma oportunidade na área de desenvolvedor Front - End ou Segurança da informação para desenvolver habilidades e
+            amplinhar meu conhecimento em ambas as áreas.
+        </div>
+
+        <dl class="about-facts">
+          <dt>Nome</dt>
+          <dd>Ruan Pablo Fernandes Silva</dd>
+
+          <dt>Área de atuação</dt>
+          <dd>Suporte T.I</dd>
+
+          <dt>Formação</dt>
+          <dd>Cursando Redes de Computadores</dd>
+
+          <dt>E-mail</dt>
+          <dd><a href="mailto:ruanfernandes.ti@outlook.com">ruanfernandes.ti@outlook.com</a></dd>
+
+          <dt>LinkedIn</dt>
+          <dd><a href="https://www.linkedin.com/in/ruan-fernandes-3a396a2a1?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer">Acesse Linkedin</a></dd>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="ano"></span> Ruan Pablo Fernandes. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <a href="mailto:ruanfernandes.ti@outlook.com">E-mail</a>
+        <a href="https://www.linkedin.com/in/ruan-fernandes-3a396a2a1?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/RuanPSilva/RuanPSilva/blob/main/README.md" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" aria-label="Voltar ao topo">↑</button>
+
+  <script src="./src/main.js"></script>
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

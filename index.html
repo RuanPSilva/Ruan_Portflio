@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RuanPSilva</title>
+  <meta name="description" content="Portfólio de Ruan Pablo Fernandes, desenvolvedor full stack e tecnólogo em Redes de Computadores. Conheça minha trajetória, competências e projetos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./src/img/iconR.png" type="./image/png">
+
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho fixo com navegação por âncoras -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="#topo" class="nav-logo">ruan<span>.</span>dev</a>
+
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#topo" class="active">Início</a></li>
+        <li><a href="#destaques">Sobre &amp; Projetos</a></li>
+        <li><a href="#competencias">Competências</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção principal de apresentação: nome centralizado sobre fundo de circuito que se desfaz ao rolar -->
+    <section class="hero" id="topo">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <h1 class="hero-name">Ruan Pablo Fernandes</h1>
+        <p class="hero-role" data-typewriter='["Desenvolvedor Full Stack", "Tecnólogo em Redes de Computadores"]' aria-live="polite"></p>
+
+        <div class="hero-actions">
+          <a href="#destaques" class="btn btn-primary">Ver meus projetos</a>
+          <a href="#contato" class="btn btn-outline">Entrar em contato</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Três cards de acesso rápido: Sobre mim, Trajetória e Projetos -->
+    <section class="nav-cards" id="destaques">
+      <div class="container">
+        <p class="prompt-label">ruan@dev:~$ ls</p>
+        <h2 class="section-title">Explore meu portfólio</h2>
+        <p class="section-lead">Cada seção abaixo abre uma página dedicada, com mais detalhes sobre quem sou, minha formação e o que venho construindo.</p>
+
+        <div class="card-grid">
+          <!-- Card 1: Sobre mim -->
+          <article class="nav-card ripple-el">
+            <div class="card-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <h3>Sobre mim</h3>
+            <p>Um pouco da minha trajetória, formação e o que me motiva na área de tecnologia.</p>
+            <a href="sobre.html" class="card-link">Clique para mais →</a>
+          </article>
+
+          <!-- Card 2: Trajetória (cursos/formação) -->
+          <article class="nav-card ripple-el">
+            <div class="card-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <h3>Trajetória</h3>
+            <p>Minha formação acadêmica, cursos técnicos e marcos de estudo até aqui.</p>
+            <a href="trajetoria.html" class="card-link">Clique para mais →</a>
+          </article>
+
+          <!-- Card 3: Projetos -->
+          <article class="nav-card ripple-el">
+            <div class="card-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <h3>Meus projetos</h3>
+            <p>Projetos práticos que venho desenvolvendo para aplicar e evoluir minhas habilidades.</p>
+            <a href="projt.html" class="card-link">Clique para mais →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competências em programação e redes -->
+    <section class="skills-section" id="competencias">
+      <div class="container">
+        <p class="prompt-label">ruan@dev:~$ cat competencias.txt</p>
+        <h2 class="section-title">Competências</h2>
+        <p class="section-lead">Tecnologias e ferramentas com as quais tenho contato direto pela minha formação em tec.ds e em tec.redes de computadores.</p>
+        <p class="placeholder-note">A tecnologia move o mundo. E nós devs movemos a tecnologia...</p>
+        
+        <br>
+
+        <div class="skills-groups">
+          <div class="skill-group">
+            <h3>Desenvolvimento</h3>
+            <div class="tag-list">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Aps.Net</span>
+              <span class="tag">Metodologias ágeis</span>
+              <span class="tag">Criação de logomarcas</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Redes</h3>
+            <div class="tag-list">
+              <span class="tag">Redes TCP/IP</span>
+              <span class="tag">Conhecimento Packet Tracer</span>
+              <span class="tag">Conhecimento Linux Ubuntu</span>
+              <span class="tag">Conhecimento em configurações em rede</span>
+              <span class="tag">Visio</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Ferramentas</h3>
+            <div class="tag-list">
+              <span class="tag">GitHub/Git</span>
+              <span class="tag">VS Code/ Visual Studio</span>
+              <span class="tag">Terminal</span>
+              <span class="tag">MYSQL</span>
+              <span class="tag">Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Informações de contato -->
+    <section class="contact-section" id="contato">
+      <div class="container">
+        <p class="prompt-label">ruan@dev:~$ contato --info</p>
+        <h2 class="section-title">Vamos conversar</h2>
+        <p class="section-lead">Estou aberto a oportunidades, trocas de conhecimento e novos projetos. Fico à disposição pelos canais abaixo.</p>
+
+        <div class="contact-grid">
+          <a class="contact-card ripple-el" href="mailto:ruanfernandes.ti@outlook.com">
+            <span class="label">E-mail</span>
+            <span class="value">ruanfernandes.ti@outlook.com</span>
+          </a>
+
+          <a class="contact-card ripple-el" href="https://www.linkedin.com/in/ruan-fernandes-3a396a2a1?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer">
+            <span class="label">LinkedIn</span>
+            <span class="value">/in/ruan-fernandes-3a396a2a1</span>
+          </a>
+
+          <a class="contact-card ripple-el" href="https://github.com/RuanPSilva/RuanPSilva/blob/main/README.md" target="_blank" rel="noopener noreferrer">
+            <span class="label">GitHub</span>
+            <span class="value">github.com/RuanPSilva</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé com informações e links -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="ano"></span> Ruan Pablo Fernandes. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <a href="mailto:ruanfernandes.ti@outlook.com">E-mail</a>
+        <a href="https://www.linkedin.com/in/ruan-fernandes-3a396a2a1?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/RuanPSilva/RuanPSilva/blob/main/README.md" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" aria-label="Voltar ao topo">↑</button>
+
+  <div class="cursor-glow"></div>
+
+  <script src="./src/main.js"></script>
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
