@@ -181,3 +181,28 @@ document.addEventListener("mousemove", (event) => {
 document.addEventListener("mouseleave", () => {
     cursorGlow.style.opacity = "0";
 });
+
+
+// =========================================================
+// CARROSSEL DE IMAGENS
+// =========================================================
+
+const carrosselLista = document.querySelector(".carrossel-lista");
+const slides = document.querySelectorAll(".carrossel-slide");
+
+let slideAtual = 0;
+
+// Troca para o próximo slide
+function proximoSlide() {
+  slideAtual++;
+
+  // Quando chegar ao último slide, volta para o primeiro
+  if (slideAtual >= slides.length) {
+    slideAtual = 0;
+  }
+
+  carrosselLista.style.transform = `translateX(-${slideAtual * 100}%)`;
+}
+
+// Troca automaticamente a cada 4 segundos
+setInterval(proximoSlide, 4000);
