@@ -16,6 +16,7 @@
    13. Componentes utilitários
    14. Responsividade
    15. Cursor
+   16. Carrosel
    ========================================================= */
 
 /* ---------- 1. Reset ---------- */
@@ -826,4 +827,65 @@ button:focus-visible {
     transition: opacity 10ms ease;
 
     opacity: 0;
+}
+
+/* =========================================================
+  16. CARROSSEL DE IMAGENS
+   ========================================================= */
+
+.carrossel {
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 140, 0, 0.35);
+  background: #111;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.carrossel-track {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carrossel-lista {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-slide {
+  min-width: 100%;
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+/* =========================================================
+   IMAGENS
+   ========================================================= */
+
+.carrossel-slide img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  /* Mantém a proporção original da imagem */
+  height: 250px;
+  /* Não corta a imagem */
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .carrossel {
+    max-width: 100%;
+  }
 }
