@@ -594,11 +594,7 @@ button:focus-visible {
   box-shadow: 0 0 0 2px var(--color-border);
 }
 
-.timeline-period {
-  font-family: var(--font-mono);
-  font-size: 0.82rem;
-  color: var(--color-accent-2);
-}
+
 
 .timeline-item h3 {
   margin-top: 6px;
@@ -833,16 +829,7 @@ button:focus-visible {
   16. CARROSSEL DE IMAGENS
    ========================================================= */
 
-.carrossel {
-  width: 100%;
-  max-width: 350px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 18px;
-  border: 1px solid rgba(255, 140, 0, 0.35);
-  background: #111;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
-}
+
 
 .carrossel-track {
   width: 100%;
@@ -856,6 +843,7 @@ button:focus-visible {
   padding: 0;
   list-style: none;
   transition: transform 0.5s ease-in-out;
+  border-radius: 10vw;
 }
 
 .carrossel-slide {
